@@ -11,8 +11,8 @@ img {
 body {
 	// background: linear-gradient(#acb6e5, #86fde8, #acb6e5);
 	// background: linear-gradient(#89fffd, #ef32d9, #89fffd);
-	// color: darkslategray;
-	color: #000;
+	color: darkslategray;
+	// color: #000;
 	font-family: $bodyFont;
 }
 
@@ -59,8 +59,7 @@ h1 {
 	font-weight: 700;
 	margin: 0;
 	// color: white;
-	// color: darkslategray;
-	color: #000;
+	color: darkslategray;
 	text-transform: uppercase;
 	// text-shadow: 1px 5px 1px 1px;
 }
@@ -119,10 +118,6 @@ li {
 	}
 }
 
-.about-me-image-circle {
-	width: 50%;
-	align-self: center;
-}
 
 // my picture
 // object-fit to get image round
@@ -134,9 +129,14 @@ li {
 	object-fit: cover;
 	display: block;
 	margin: 0 auto;	
+	margin-right: 
 	
 }
 
+.about-me-image-circle {
+	width: 50%;
+	align-self: center;
+}
 .about-me-icon {
 	border-bottom: 1px solid rgb(241, 187, 241);
 	padding: 10px;
@@ -187,6 +187,30 @@ svg {
 
 a {
 	text-decoration: none;
+	color: darkslategray;
+	padding: 5px;
+}
+
+button::hover {
+	background: darkslategray;
+	color: white;
+}
+
+
+.view-work-button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.view-button {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	border-radius: 10px;
+	height: 30px;
+	width: 100px;
+	border: 1px solid darkslategray;
+	background: none;
 }
 
 

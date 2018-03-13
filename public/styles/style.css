@@ -532,7 +532,7 @@ img {
   width: 100%; }
 
 body {
-  color: #000;
+  color: darkslategray;
   font-family: "Ubuntu", sans-serif; }
 
 header {
@@ -560,7 +560,7 @@ h1 {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #000;
+  color: darkslategray;
   text-transform: uppercase; }
 
 ul {
@@ -659,4 +659,28 @@ svg {
   margin: 20px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: darkslategray;
+  padding: 5px; }
+
+button::hover {
+  background: darkslategray;
+  color: white; }
+
+.view-work-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.view-button {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  border: 1px solid darkslategray;
+  background: none; }
