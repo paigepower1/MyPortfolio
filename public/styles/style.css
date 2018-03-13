@@ -528,9 +528,135 @@ template {
 body {
   font-size: 16px; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+img {
+  width: 100%; }
 
 body {
-  background: red; }
+  color: #000;
+  font-family: "Ubuntu", sans-serif; }
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1bbf1), to(#bbf8f7));
+  background: linear-gradient(#f1bbf1, #bbf8f7); }
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto; }
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px; }
+  .header-container p {
+    margin-bottom: 150px; }
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+  text-transform: uppercase; }
+
+ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 10px; }
+
+.about-me-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 150px; }
+
+@media screen and (max-width: 600px) {
+  .about-me-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about-me-details-container {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 600px) {
+  .about-me-image-circle {
+    width: 100%; } }
+
+.about-me-details-container {
+  width: 50%; }
+  .about-me-details-container p {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+.about-me-image-circle {
+  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.image-circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0 auto; }
+
+.about-me-icon {
+  border-bottom: 1px solid #f1bbf1;
+  padding: 10px;
+  width: 100%; }
+
+svg {
+  width: 60px;
+  height: 60px;
+  fill: darkslategray; }
+
+.main-section-header {
+  text-align: center; }
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 70px;
+  margin-bottom: 150px; }
+
+.icon {
+  font-size: 70px;
+  margin: 20px; }
+
+a {
+  text-decoration: none; }

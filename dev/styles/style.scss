@@ -2,11 +2,193 @@
 @import 'components/base';
 @import 'components/typography';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+
+// broad styles
+img {
+	width: 100%;
 }
 
-* {
-	outline: 1px solid red;
+body {
+	// background: linear-gradient(#acb6e5, #86fde8, #acb6e5);
+	// background: linear-gradient(#89fffd, #ef32d9, #89fffd);
+	// color: darkslategray;
+	color: #000;
+	font-family: $bodyFont;
 }
+
+// HEADER STYLES START
+header {
+	// background: palegreen;
+	// background: linear-gradient(#86fde8, #acb6e5);
+	background: linear-gradient(rgb(241, 187, 241), #bbf8f7);
+	// background-image: linear-gradient(to top, deepskyblue 100%, violet 0%);
+}
+
+.wrapper {
+	max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-introduction {
+	// height: 50vh;
+}
+
+.header-container {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	margin-top: 150px;
+	p {
+		margin-bottom: 150px;
+	}
+}
+
+.header-title {
+	// height: 500px;
+	// padding: 10px;
+
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// // background:rgba(255,255,255, .6);
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+	// color: white;
+	// color: darkslategray;
+	color: #000;
+	text-transform: uppercase;
+	// text-shadow: 1px 5px 1px 1px;
+}
+
+ul {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+// MAIN STYLES START
+
+// about me section 
+.section-about-me {
+	// height: 50vh;
+}
+
+.about-me-container {
+	display: flex;
+	margin-top: 80px;
+	margin-bottom: 150px; 
+}
+
+// centering about me details
+@media screen and (max-width: 600px) {
+	.about-me-container {
+		flex-direction: column;
+	}
+	.about-me-details-container {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about-me-image-circle {
+		width: 100%;
+	}
+}
+
+
+
+.about-me-details-container {
+	// display: flex;
+	width: 50%;
+	// flex-direction: row;
+	p {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+.about-me-image-circle {
+	width: 50%;
+	align-self: center;
+}
+
+// my picture
+// object-fit to get image round
+.image-circle {
+	border-radius: 50%;
+	// border: .5px solid red;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;	
+	
+}
+
+.about-me-icon {
+	border-bottom: 1px solid rgb(241, 187, 241);
+	padding: 10px;
+	width: 100%;
+	// height: 30px;
+}
+
+.icon {
+}
+
+// about me svg's
+svg {
+	width: 60px;
+	height: 60px;
+	fill: darkslategray;
+}
+
+// center about me svg's 
+@media screen and (max-width: 600px) {
+	svg {
+		// align-content: center;
+	}
+}
+
+.main-section-header {
+	text-align: center;
+}
+
+// experience and skills section 
+.icon-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-basis: 200px;
+	flex-wrap: wrap;
+	// height: 50vh;
+	align-content: center;
+	margin-top: 70px;
+	margin-bottom: 150px;
+}
+
+.icon {
+	font-size: 70px;
+	margin: 20px;
+}
+
+// portfolio section
+
+a {
+	text-decoration: none;
+}
+
+
+
+
