@@ -20,7 +20,7 @@ body {
 header {
 	// background: palegreen;
 	// background: linear-gradient(#86fde8, #acb6e5);
-	background: linear-gradient(rgb(241, 187, 241), #bbf8f7);
+	background: linear-gradient(rgb(246, 212, 246), rgb(192, 239, 233));
 	// background-image: linear-gradient(to top, deepskyblue 100%, violet 0%);
 }
 
@@ -42,6 +42,7 @@ header {
 	p {
 		margin-bottom: 150px;
 	}
+	// height: 50vh;
 }
 
 .header-title {
@@ -88,6 +89,7 @@ li {
 	display: flex;
 	margin-top: 80px;
 	margin-bottom: 150px; 
+
 }
 
 // centering about me details
@@ -129,9 +131,15 @@ li {
 	object-fit: cover;
 	display: block;
 	margin: 0 auto;	
-	margin-right: 
-	
 }
+
+@media screen and (max-width: 600px) {
+	.image-circle {
+		height: 150px;
+		width: 150px;
+	}
+}
+
 
 .about-me-image-circle {
 	width: 50%;

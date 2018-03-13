@@ -536,8 +536,8 @@ body {
   font-family: "Ubuntu", sans-serif; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1bbf1), to(#bbf8f7));
-  background: linear-gradient(#f1bbf1, #bbf8f7); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6d4f6), to(#c0efe9));
+  background: linear-gradient(#f6d4f6, #c0efe9); }
 
 .wrapper {
   max-width: 1080px;
@@ -607,11 +607,6 @@ li {
     margin-bottom: 0;
     margin-top: 0; }
 
-.about-me-image-circle {
-  width: 50%;
-  -ms-flex-item-align: center;
-      align-self: center; }
-
 .image-circle {
   border-radius: 50%;
   height: 200px;
@@ -620,6 +615,16 @@ li {
      object-fit: cover;
   display: block;
   margin: 0 auto; }
+
+@media screen and (max-width: 600px) {
+  .image-circle {
+    height: 150px;
+    width: 150px; } }
+
+.about-me-image-circle {
+  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .about-me-icon {
   border-bottom: 1px solid #f1bbf1;
