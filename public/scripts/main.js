@@ -1,5 +1,5 @@
-"use strict";
+'use strict';
 
-var ohHey = "Hello World";
-
-console.log(ohHey);
+$(document).ready(function () {
+    $('.emoji-container').smoothScroll();
+});
