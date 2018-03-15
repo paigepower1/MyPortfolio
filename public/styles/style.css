@@ -554,10 +554,20 @@ header {
   width: 90%;
   margin: 0 auto; }
 
+.section-introduction {
+  height: 50%; }
+
 .header-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -566,16 +576,22 @@ header {
     color: white;
     font-size: 25px; }
 
-.header-title a {
-  font-size: 40px;
+.header-title {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+a.pointer-emoji {
+  font-size: 60px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 h1 {
   font-size: 60px;
@@ -627,6 +643,10 @@ li {
     margin-top: 0;
     line-height: 30px; }
 
+@media screen and (max-width: 888px) {
+  .about-paragraph {
+    font-size: 15px; } }
+
 @media screen and (max-width: 900px) {
   .about-me-container {
     -webkit-box-orient: vertical;
@@ -647,7 +667,8 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 50px; }
 
 @media screen and (max-width: 600px) {
   .image-circle {
@@ -682,7 +703,8 @@ svg {
 h2 {
   text-align: center;
   font-weight: 400;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 80px; }
 
 .icon-container {
   display: -webkit-box;
@@ -702,7 +724,7 @@ h2 {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 70px;
-  margin-bottom: 150px; }
+  margin-bottom: 80px; }
 
 .icon {
   font-size: 70px;
@@ -717,7 +739,8 @@ h2 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 80px; }
   .view-work-button-container a {
     text-decoration: none;
     color: darkslategray;
@@ -732,10 +755,35 @@ h2 {
     background: none;
     font-size: 18px; }
 
+.projects-link:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fadcfa), to(#6ce7db));
+  background: linear-gradient(#fadcfa, #6ce7db);
+  color: white; }
+
+.app-description {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  line-height: 30px; }
+
 footer {
-  background: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fadcfa), to(#6ce7db));
+  background: linear-gradient(#fadcfa, #6ce7db);
   padding-top: 50px;
   padding-bottom: 50px; }
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .active-link {
   text-decoration: none;
@@ -748,6 +796,9 @@ footer {
 h2.contact-envelope-emoji {
   font-size: 40px;
   text-align: center; }
+
+.contact-envelope-emoji {
+  margin-top: 0; }
 
 .fa-twitter-square {
   padding: 10px; }
@@ -765,3 +816,17 @@ h2.contact-envelope-emoji {
 
 .get-in-touch {
   text-align: center; }
+
+a.email {
+  color: #606060;
+  font-size: 18px; }
+
+a.email:hover {
+  text-decoration: underline; }
+
+.active-link {
+  text-align: center; }
+
+.footer-contact-icons {
+  margin: 0 auto;
+  padding: 10px; }

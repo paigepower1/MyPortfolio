@@ -20,12 +20,11 @@
 			<h1>Hi, I'm Paige Power!</h1>
 			<p>I'm a front-end web developer <br> among many other things!</p>
 			<!-- smooth scroll -->
-			<div class="emoji-container">
-				<a class="pointer-emoji" href="#about-me">👇</a>
-			</div>
+		</div>
+		<div class="emoji-container">
+			<a class="pointer-emoji" href="#about-me">👇</a>
 		</div>
 	</div>
-	
 </section>
 </header>
 
@@ -35,7 +34,7 @@
 	<div class="wrapper about-me-container">
 		<div class="about-me-image-circle">
 			<!-- <img class="image-circle" src="./dev/images/folioImage.JPG" alt="profile photo"> -->
-			<img class="image-circle" src="./dev/images/profilePic.JPG" alt="profile photo">
+			<img class="image-circle" src="./public/images/profilePic.jpg" alt="profile photo">
 		</div>
 		<div class="about-me-details-container">
 			<div class="about-me-icon">
@@ -58,7 +57,7 @@
 				</div>
 				<!-- Created by Oksana Latysheva from the Noun Project -->
 				<div>
-					<p>I have a fine art degree from OCADU and enjoy making creative and artistic <a href="">web applications!</a></p>
+					<p class="about-paragraph">I have a fine art degree from OCADU and enjoy making creative and artistic <a href="">web applications!</a></p>
 				</div>
 			</div>
 			<div class="about-me-icon">
@@ -77,7 +76,7 @@
 					</svg>
 				</div>
 				<div>
-					<p>I'm a farmer who is passionate about combining technology and farming techniques to create <a href="">web applications!</a></p>
+					<p class="about-paragraph">I'm a farmer who is passionate about combining technology and farming techniques to create <a href="">web applications!</a></p>
 				</div>
 			</div>
 			<div class="about-me-icon">
@@ -94,7 +93,7 @@
 				</div>
 				<!-- Created by Three Six Five from the Noun Project -->
 				<div>
-					<p>I'm a graduate of HackerYou's full time immersive front-end web development boot camp with a passion for clean code!</p>
+					<p class="about-paragraph">I'm a graduate of HackerYou's full time immersive front-end web development boot camp with a passion for clean code!</p>
 				</div>
 			</div>
 		</div>
@@ -144,26 +143,26 @@
 		<h2 class="section-header">Projects I'm currently working on</h2>
 		<div>
 			<div>
-				<img src="./dev/images/chickenApp.png" alt="weather API and calendar project">
+				<img src="./public/images/chickenApp.png" alt="weather API and calendar project">
 			</div>
-			<div>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam quaerat laboriosam aperiam adipisci sunt distinctio.</p> -->
+			<div class="app-description">
+				<p>This app is built for a farmer who has chickens and would like to record weather data and the amount of chicken eggs laid on a particular day!</p>
 			</div>
 			<div class="view-work-button-container">
-				<a class="link projects-link" href="">Git Hub</a>
-				<a class="link projects-link" href="">View Live</a>
+				<a class="link projects-link" href="https://github.com/paigepower1/chicken-app">Git Hub</a>
+				<a class="link projects-link" href="https://paigepower1.github.io/chicken-app/">View Live</a>
 			</div>
 		</div>
 		<div>
 			<div>
-				<img src="./dev/images/colourApp.png" alt="colour changing app">
+				<img src="./public/images/colourApp.png" alt="colour changing app">
 			</div>
-			<div>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam quaerat laboriosam aperiam adipisci sunt distinctio.</p> -->
+			<div class="app-description">
+				<p>Here you can randomize HEX colour codes to see how they interact with each other!</p>
 			</div>
 			<div class="view-work-button-container">
-				<a class="link projects-link" href="">Git Hub</a>
-				<a class="link projects-link" href="">View Live</a>
+				<a class="link projects-link" href="https://github.com/paigepower1/project3">Git Hub</a>
+				<a class="link projects-link" href="https://paigepower1.github.io/project3/">View Live</a>
 			</div>
 		</div>
 		<!-- <div>
@@ -187,15 +186,20 @@
 	<div class="wrapper contact-container">
 		<div class="get-in-touch-container">
 			<div><h2 class="contact-envelope-emoji">📩</h2></div>
-			<div class="get-in-touch"><p>Get in touch!</p></div>
+			<div class="get-in-touch"><p>If there's a project you would like to work on together, please contact me!</p></div>
 		</div>
 		<div class="contact-email">
 			<a class="email" href="mailto:paige.power2@gmail.com">paige.power2@gmail.com</a>
 		</div>
 		<div class="footer-contact-icons">
-			<a class="active-link" href=""><i class="fab fa-twitter-square"></i>Twitter</a>
-			<a class="active-link" href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
-			<a class="active-link" href=""><i class="fab fa-github-square"></i>Git Hub</a>
+			<a class="active-link" href="">
+				<i class="devicon-twitter-plain"></i>Twitter
+			</a>
+			<a class="active-link" href="">
+				<i class="fab fa-linkedin"></i>LinkedIn
+			<a class="active-link" href="">
+				<i class="fab fa-github-square"></i>Git Hub
+			</a>
 		</div>
 	</div>
 </footer>
