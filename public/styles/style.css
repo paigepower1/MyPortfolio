@@ -532,7 +532,7 @@ img {
   width: 100%; }
 
 body {
-  color: #606060;
+  color: #000;
   font-family: "Ubuntu", sans-serif; }
 
 header {
@@ -575,10 +575,14 @@ header {
   .header-container p {
     color: white;
     font-size: 25px; }
+    @media screen and (max-width: 410px) {
+      .header-container p {
+        font-size: 20px; } }
 
 .header-title {
   -ms-flex-item-align: start;
-      align-self: flex-start; }
+      align-self: flex-start;
+  margin-top: 150px; }
 
 a.pointer-emoji {
   font-size: 60px;
@@ -592,6 +596,10 @@ a.pointer-emoji {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 410px) {
+    a.pointer-emoji {
+      font-size: 50px;
+      margin-top: 30px; } }
 
 h1 {
   font-size: 60px;
@@ -623,8 +631,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 80px;
-  margin-bottom: 150px; }
+  margin-top: 80px; }
 
 .about-me-details-container {
   width: 50%;
@@ -656,9 +663,9 @@ li {
   .about-me-details-container {
     margin: 0 auto; } }
 
-@media screen and (max-width: 900px) {
-  .about-me-image-circle {
-    width: 100%; } }
+@media screen and (max-width: 700px) {
+  .about-me-details-container {
+    min-width: 100%; } }
 
 .image-circle {
   border-radius: 50%;
@@ -669,17 +676,19 @@ li {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px; }
-
-@media screen and (max-width: 600px) {
-  .image-circle {
-    height: 150px;
-    width: 150px; } }
+  @media screen and (max-width: 600px) {
+    .image-circle {
+      height: 150px;
+      width: 150px; } }
 
 .about-me-image-circle {
   width: 50%;
   -ms-flex-item-align: center;
       align-self: center;
   padding-bottom: 0; }
+  @media screen and (max-width: 900px) {
+    .about-me-image-circle {
+      width: 100%; } }
 
 .about-me-icon {
   border-bottom: 1px solid #f1bbf1;
@@ -698,7 +707,7 @@ li {
 svg {
   width: 60px;
   height: 60px;
-  fill: #606060; }
+  fill: #000; }
 
 h2 {
   text-align: center;
@@ -758,14 +767,27 @@ h2 {
 .projects-link:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#fadcfa), to(#6ce7db));
   background: linear-gradient(#fadcfa, #6ce7db);
-  color: white; }
+  color: white;
+  border: none; }
+
+@media screen and (max-width: 600px) {
+  .project-link {
+    padding: 20px; } }
 
 .app-description {
   font-size: 20px;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 80px;
-  line-height: 30px; }
+  line-height: 30px;
+  text-align: center; }
+  @media screen and (max-width: 600px) {
+    .app-description {
+      font-size: 15px;
+      min-width: 100%; } }
+
+.projects-section-header {
+  margin-bottom: 60px; }
 
 footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#fadcfa), to(#6ce7db));
@@ -787,7 +809,7 @@ footer {
 
 .active-link {
   text-decoration: none;
-  color: #606060;
+  color: #000;
   padding: 10px; }
 
 .active-link:hover {
@@ -818,7 +840,7 @@ h2.contact-envelope-emoji {
   text-align: center; }
 
 a.email {
-  color: #606060;
+  color: #000;
   font-size: 18px; }
 
 a.email:hover {

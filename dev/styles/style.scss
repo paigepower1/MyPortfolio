@@ -3,26 +3,19 @@
 @import 'components/typography';
 
 
-// broad styles
+// BROAD STYLES
 img {
 	width: 100%;
 }
 
 body {
-	// background: linear-gradient(#acb6e5, #86fde8, #acb6e5);
-	// background: linear-gradient(#89fffd, #ef32d9, #89fffd);
-	color: #606060;
-	// color: #000;
+	color: #000;
 	font-family: $bodyFont;
 }
 
 // HEADER STYLES START
 header {
-	// background: palegreen;
 	background: linear-gradient($headerColor1, $headerColor2);
-	// background: black;
-	// background: linear-gradient(rgb(246, 212, 246), rgb(192, 239, 233));
-	// background-image: linear-gradient(to top, deepskyblue 100%, violet 0%);
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -45,17 +38,21 @@ header {
 	flex-direction: column;
 	height: 100%;
 	align-items: center;
-	// margin-top: 150px;
+
 	p {
-		// margin-bottom: 100px;
 		color: white;
 		font-size: 25px;
+
+		@media screen and (max-width: 410px) {
+			font-size: 20px;
+		}
 	}
+
 }
 
 .header-title {
-	// emoji 
 	align-self: flex-start;
+	margin-top: 150px;
 }
 
 a.pointer-emoji {
@@ -64,18 +61,26 @@ a.pointer-emoji {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+
+	@media screen and (max-width: 410px) {
+		font-size: 50px;
+		margin-top: 30px;
+	}
 }
+
+// a.pointer-emoji:focus {
+// 	border: 1px dotted black;
+// }
 
 h1 {
 	font-size: 60px;
 	font-weight: 700;
 	margin: 0;
 	color: white;
-	// text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-	// color: darkslategray;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgb(239, 196, 244);
 }
+
 
 ul {
 	margin: 0;
@@ -93,28 +98,19 @@ li {
 // MAIN STYLES START
 
 // about me section 
-.section-about-me {
-	// height: 50vh;
-}
-
 .about-me-container {
 	display: flex;
 	margin-top: 80px;
-	margin-bottom: 150px; 
-
 }
 
 // centering about me details
 
 .about-me-details-container {
-	// display: flex;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// text-align: center;
 
-	// flex-direction: row;
 	p {
 		margin-bottom: 0;
 		margin-top: 0;
@@ -127,8 +123,6 @@ li {
 		font-size: 15px;
 	}
 }
-
-
 @media screen and (max-width: 900px) {
 	.about-me-container {
 		flex-direction: column;
@@ -138,47 +132,50 @@ li {
 	}
 }
 
-@media screen and (max-width: 900px) {
-	.about-me-image-circle {
-		width: 100%;
+@media screen and (max-width: 700px) {
+	.about-me-details-container {
+		min-width: 100%;
 	}
 }
 
 
-// my picture
+
+
+
+// PROFILE PHOTO
 // object-fit to get image round
 .image-circle {
 	border-radius: 50%;
-	// border: .5px solid red;
 	height: 300px;
 	width: 300px;
 	object-fit: cover;
 	display: block;
 	margin: 0 auto;	
 	margin-bottom: 50px;
-}
 
-@media screen and (max-width: 600px) {
-	.image-circle {
+	@media screen and (max-width: 600px) {
 		height: 150px;
 		width: 150px;
 	}
 }
 
+
 .about-me-image-circle {
 	width: 50%;
 	align-self: center;
 	padding-bottom: 0;
+
+	@media screen and (max-width: 900px) {
+		width: 100%;
+	}
 }
+
 
 .about-me-icon {
 	border-bottom: 1px solid rgb(241, 187, 241);
-	// border-bottom: 1px solid $headerGradient;
 	padding: 10px;
 	width: 100%;
 	display: flex;
-	// width: 100%;
-	// height: 30px;
 }
 
 .gradient {
@@ -192,11 +189,10 @@ li {
 svg {
 	width: 60px;
 	height: 60px;
-	fill: #606060;
+	fill: #000;
 }
 
 // center about me svg's 
-
 h2 {
 	text-align: center;
 	font-weight: 400;
@@ -204,7 +200,7 @@ h2 {
 	margin-top: 80px;
 }
 
-// experience and skills section 
+//EXPERIENCE AND SKILLS SECTION 
 .icon-container {
 	display: flex;
 	flex-direction: row;
@@ -225,13 +221,12 @@ h2 {
 	}
 }
 
-// portfolio section
 
+// PORTFOLIO SECTION
 .view-work-button-container {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 80px;
-	// width: 500px;
 	a {
 	   text-decoration: none;
 	   color: darkslategray;
@@ -249,11 +244,17 @@ h2 {
 }
 
 .projects-link:hover {
-	// background: #606060;
 	background: linear-gradient($headerColor1, $headerColor2);
 	color: white;
-
+	border: none;
 }
+
+@media screen and (max-width: 600px) {
+	.project-link {
+		padding: 20px;
+	}
+}
+
 
 .app-description {
 	font-size: 20px;
@@ -261,13 +262,21 @@ h2 {
 	margin: 0 auto;
 	margin-bottom: 80px;
 	line-height: 30px;
+	text-align: center;
+	@media screen and (max-width: 600px) {
+		font-size: 15px;
+		min-width: 100%;
+	}
 }
 
-// Contact
 
+.projects-section-header {
+	margin-bottom: 60px;
+}
+
+// CONTACT
 footer {
 	background: linear-gradient($headerColor1, $headerColor2);
-	// background: #f8f8f8; 
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -280,7 +289,7 @@ footer {
 
 .active-link {
 	text-decoration: none;
-	color: #606060;
+	color: #000;
 	padding: 10px;
 }
 
@@ -317,11 +326,10 @@ h2.contact-envelope-emoji {
 
 .get-in-touch{
 	text-align: center;
-	// color: white;
 }
 
 a.email {
-	color: #606060; 
+	color: #000; 
 	font-size: 18px;
 }
 
